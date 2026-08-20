@@ -1,0 +1,35 @@
+{
+  "name": "genpark-omnichannel-social-shop-product-catalog-synchronizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Omnichannel social commerce product catalog synchronizer & multi-platform inventory distributor.",
+  "author": "genpark",
+  "category": "operations",
+  "tags": [
+    "social-commerce",
+    "catalog-synchronizer",
+    "inventory-distributor",
+    "tiktok-shop-sync",
+    "livelab"
+  ],
+  "inputs": {
+    "product_sku_list": {
+      "type": "array"
+    },
+    "target_marketplaces": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "synced_marketplaces": {
+      "type": "array"
+    },
+    "synchronized_listings_count": {
+      "type": "integer"
+    },
+    "sync_latency_ms": {
+      "type": "integer"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
